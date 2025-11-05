@@ -2,7 +2,7 @@
 
 Colección de estrategias de trading algorítmico para Freqtrade, diseñadas para diferentes estilos de trading y condiciones de mercado.
 
-## 📋 Estrategias Disponibles
+## Estrategias Disponibles
 
 ### IchiV1 - Ichimoku Cloud Multi-Timeframe
 
