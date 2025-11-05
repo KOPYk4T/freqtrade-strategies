@@ -1,0 +1,97 @@
+{
+  "max_open_trades": 8,
+  "stake_currency": "USDT",
+  "stake_amount": 30,
+  "tradable_balance_ratio": 0.75,
+  "amend_last_stake_amount": true,
+  "fiat_display_currency": "USD",
+  "initial_state": "running",
+  "dry_run": false,
+  "dry_run_wallet": 240,
+  "cancel_open_orders_on_exit": false,
+  "trading_mode": "spot",
+  "margin_mode": "isolated",
+  "unfilledtimeout": {
+    "entry": 10,
+    "exit": 10,
+    "exit_timeout_count": 0,
+    "unit": "minutes"
+  },
+  "entry_pricing": {
+    "price_side": "other",
+    "use_order_book": true,
+    "order_book_top": 1,
+    "price_last_balance": 0.0,
+    "check_depth_of_market": {
+      "enabled": false,
+      "bids_to_ask_delta": 1
+    }
+  },
+  "exit_pricing": {
+    "price_side": "other",
+    "use_order_book": true,
+    "order_book_top": 1
+  },
+  "exchange": {
+    "name": "binance",
+    "key": "API_KEY",
+    "secret": "API_SECRET",
+    "ccxt_config": {},
+    "ccxt_async_config": {},
+    "pair_whitelist": [
+      "BTC/USDT",
+      "ETH/USDT",
+      "SOL/USDT",
+      "BNB/USDT",
+      "ADA/USDT",
+      "XRP/USDT",
+      "DOGE/USDT",
+      "AVAX/USDT",
+      "DOT/USDT",
+      "LINK/USDT",
+      "MATIC/USDT",
+      "UNI/USDT",
+      "ATOM/USDT",
+      "LTC/USDT"
+    ],
+    "pair_blacklist": []
+  },
+  "pairlists": [
+    {
+      "method": "StaticPairList"
+    }
+  ],
+  "strategy_parameters": {
+    "buy_cti_32": -0.38,
+    "buy_rsi_32": 38,
+    "buy_rsi_fast_32": 51,
+    "buy_rsi_fast_period": 127,
+    "buy_rsi_period": 137,
+    "buy_rsi_slow_period": 146,
+    "buy_sma15_32": 0.957,
+    "buy_sma_period": 89,
+    "sell_fastx": 84,
+    "sell_loss_cci": 120,
+    "sell_loss_cci_profit": -0.05
+  },
+  "telegram": {
+    "enabled": true,
+    "token": "TELEGRAM_TOKEN",
+    "chat_id": "TELEGRAM_CHAT_ID",
+    "allow_custom_messages": true,
+    "notification_settings": {
+        "status": "silent",
+        "warning": "on",
+        "startup": "on",
+        "entry": "silent",
+        "entry_fill": "on",
+        "entry_cancel": "silent",
+        "exit": "on",
+        "exit_fill": "off",
+        "exit_cancel": "on",
+        "protection_trigger": "on",
+        "protection_trigger_global": "on"
+    }
+  }
+}
+
