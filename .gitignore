@@ -1,0 +1,28 @@
+# Archivos de configuración con información sensible
+config*.json
+*.json
+
+# Archivos de base de datos
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Logs
+*.log
+logfile.txt
+
+# Archivos temporales
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Resultados de backtesting
+backtest_results/
+hyperopt_results/
+
+# Archivos del sistema
+.DS_Store
+.vscode/
+.idea/
+
