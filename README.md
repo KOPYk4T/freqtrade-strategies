@@ -4,7 +4,7 @@ Colección de estrategias de trading algorítmico para Freqtrade, diseñadas par
 
 ## 📋 Estrategias Disponibles
 
-### 📊 IchiV1 - Ichimoku Cloud Multi-Timeframe
+### IchiV1 - Ichimoku Cloud Multi-Timeframe
 
 Estrategia basada en análisis de Ichimoku Cloud combinado con múltiples EMAs (Exponential Moving Averages) para detectar tendencias fuertes y entradas en momentum alcista.
 
@@ -47,7 +47,7 @@ Estrategia basada en análisis de Ichimoku Cloud combinado con múltiples EMAs (
 
 ---
 
-### 📈 E0V1E - RSI Multi-Timeframe con Custom Stoploss
+### E0V1E - RSI Multi-Timeframe con Custom Stoploss
 
 Estrategia basada en indicadores RSI (Relative Strength Index) en múltiples períodos, combinada con SMA (Simple Moving Average) y CTI (Correlation Trend Indicator) para identificar entradas en condiciones de sobreventa.
 
@@ -83,7 +83,7 @@ Estrategia basada en indicadores RSI (Relative Strength Index) en múltiples per
 
 ---
 
-### 🎯 Grid Trading - Estrategias de Rejilla
+### Grid Trading - Estrategias de Rejilla
 
 Estrategias de Grid Trading que operan comprando en niveles bajos y vendiendo en niveles altos, aprovechando la volatilidad del mercado mediante una rejilla de precios dinámica.
 
@@ -173,7 +173,7 @@ user_data/strategies/
 
 ---
 
-## 📊 Uso
+## Uso
 
 ### Backtesting
 
@@ -246,90 +246,6 @@ freqtrade hyperopt \
 - **Stoploss**: -5% a -6% según versión
 - **Timeframe**: 5m
 - **Trading pairs**: Pairs con alta volatilidad y rango lateral
-
----
-
-## 📈 Comparativa de Estrategias
-
-| Estrategia             | Stoploss        | ROI Target | Frecuencia | Perfil de Riesgo |
-| ---------------------- | --------------- | ---------- | ---------- | ---------------- |
-| **IchiV1_Fixed**       | -27.5%          | 3% → 0%    | Media      | Alto             |
-| **IchiV1_Optimizable** | -27.5%          | 3% → 0%    | Variable   | Alto             |
-| **E0V1E**              | -25% (dinámico) | 1%         | Alta       | Medio-Alto       |
-| **GridStrategy**       | -5%             | 2%         | Alta       | Medio            |
-| **GridStrategyV2**     | -6%             | 2.5% → 1%  | Alta       | Medio            |
-
----
-
-## ⚠️ Advertencias Importantes
-
-### Rendimiento
-
-⚠️ **El rendimiento pasado no garantiza resultados futuros**. Siempre prueba en dry-run antes de usar capital real.
-
-### Backtesting
-
-- Realiza backtesting en períodos largos (mínimo 6 meses)
-- Prueba en diferentes condiciones de mercado (tendencia, lateral, volatilidad)
-- Considera fees y slippage en tus cálculos
-
-### Gestión de Riesgo
-
-- Nunca arriesgues más del 1-2% de tu capital por trade
-- Usa stoploss siempre
-- Considera el drawdown máximo antes de comenzar
-- Diversifica entre múltiples pares si es posible
-
----
-
-## 🔒 Seguridad
-
-**IMPORTANTE**: Nunca subas tu archivo `config.json` con API keys y secretos a GitHub o repositorios públicos.
-
-### Si accidentalmente expusiste credenciales:
-
-1. **Revoca las API keys inmediatamente** en tu exchange
-2. Genera nuevas API keys
-3. Actualiza tu `config.json` local
-4. Si usas Git, considera cambiar el historial o eliminar el repositorio
-
-### Mejores Prácticas:
-
-- Usa `.gitignore` para excluir `config.json`
-- Crea un `config.example.json` sin credenciales
-- Usa variables de entorno para credenciales sensibles
-- Limita permisos de API keys (solo trading, no retiros)
-
----
-
-## 📝 Licencia
-
-[Especifica tu licencia aquí - MIT, GPL, etc.]
-
----
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Por favor:
-
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingStrategy`)
-3. Commit tus cambios (`git commit -m 'Add AmazingStrategy'`)
-4. Push a la rama (`git push origin feature/AmazingStrategy`)
-5. Abre un Pull Request
-
-### Guías para Contribuir:
-
-- Mantén el código limpio y comentado
-- Documenta nuevas estrategias en el README
-- Incluye ejemplos de uso y configuración
-- Prueba tus cambios antes de hacer PR
-
----
-
-## 📧 Contacto
-
-[Tu información de contacto]
 
 ---
 
