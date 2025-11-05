@@ -1,6 +1,3 @@
-# Archivos de configuración con información sensible
-config*.json
-*.json
 
 # Archivos de base de datos
 *.sqlite

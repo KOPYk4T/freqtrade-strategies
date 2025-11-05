@@ -1,0 +1,35 @@
+{
+  "strategy_name": "IchiV1_Optimizable",
+  "params": {
+    "roi": {
+      "0": 0.03,
+      "10": 0.02,
+      "57": 0.01,
+      "99": 0
+    },
+    "stoploss": {
+      "stoploss": -0.275
+    },
+    "trailing": {
+      "trailing_stop": false,
+      "trailing_stop_positive": null,
+      "trailing_stop_positive_offset": 0.0,
+      "trailing_only_offset_is_reached": false
+    },
+    "max_open_trades": {
+      "max_open_trades": 3
+    },
+    "buy": {
+      "buy_fan_magnitude_shift_value": 1,
+      "buy_min_fan_magnitude_gain": 1.001,
+      "buy_trend_above_senkou_level": 1,
+      "buy_trend_bullish_level": 4
+    },
+    "sell": {
+      "sell_trend_indicator": "trend_close_30m"
+    },
+    "protection": {}
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2025-11-05 03:23:25.703464+00:00"
+}
